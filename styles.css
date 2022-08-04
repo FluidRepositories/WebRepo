@@ -169,6 +169,9 @@ body {
   .iconuno{
     cursor: pointer;
 }
+.btntrans {
+  background-color: transparent;
+}
 .gg-menu {
     transform: scale(var(--ggs,1))
     
@@ -239,14 +242,73 @@ body {
     left: 4px;
     bottom: -2px
    } 
-   .btntrans{
+   .dlbtntrans{
     background-color: transparent;
     border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
    }
-   .centrimg{
+   .dlcentrimg{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     align-items: center;
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .dlbutton {
+    display: inline;
+    border-radius: 7px;
+    border: none;
+    background: #1875FF;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0px 14px 56px -11px #1875FF;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   
+   .dlbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .dlbutton span:after {
+    content: 'for free';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .dlbutton:hover span {
+    padding-right: 3.55em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .dlbutton:hover span:after {
+    opacity: 4;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
    }
